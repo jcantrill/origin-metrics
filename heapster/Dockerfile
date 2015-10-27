@@ -17,12 +17,10 @@
 
 # Heapster Docker Image
 
-FROM burmanm/hawkular-heapster:0.18.3
+FROM centos7
 
 # The image is maintained by the Hawkular Metrics team
 MAINTAINER Hawkular Metrics <hawkular-dev@lists.jboss.org>
-
-RUN apk add --update bash && rm -rf /var/cache/apk/*
 
 ADD heapster-wrapper.sh /heapster-wrapper.sh
 
