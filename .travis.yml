@@ -1,0 +1,6 @@
+script:
+  - hack/build-images.sh
+
+branches:
+  only:
+    - travis_config
